@@ -1,0 +1,258 @@
+.red{
+    background: linear-gradient(red,white);
+}
+.green{
+    background: linear-gradient(rgb(30, 255, 0),white);
+}
+.blue{
+    background: linear-gradient(rgb(0, 38, 255),white);
+}
+.yellow{
+    background: linear-gradient(yellow,white);
+}
+.pink{
+    background: linear-gradient(pink,white);
+}
+
+
+/* row */
+.flexs div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.flexs{
+    display: flex;
+}
+
+
+
+/* column */
+.column div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* .rowrevers */
+.rowrevers div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.rowrevers{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* columnrevers */
+.columnrevers div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.columnrevers{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* flexend */
+.flexend div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.flexend{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* center */
+.center div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+/* Spacearound */
+.Spacearound div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.Spacearound{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* spacebetween */
+.spacebetween div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* spaceevenly */
+.spaceevenly div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.spaceevenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* flexgrow */
+.flexself div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.flexself{
+    display: flex;
+    /* justify-content: center; */
+}
+.flexself .green{
+    flex-grow: 2;
+}
+
+/* flexsinke */
+.flexsinke div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.flexsinke{
+    display: flex;    
+    /* justify-content: center; */
+}
+.flexsinke .shink{
+    flex-shrink: 2;
+}
+.color{
+    position: absolute;
+    margin-top: 200px;
+    width: 99%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(
+        to right,
+        red 10%,
+        blue 10% 20%,
+        green 20% 30%,
+        hotpink 30% 40%,
+        purple 40% 50%,
+        crimson 50% 60%,
+        lightgreen 60% 70%,
+        royalblue 70% 80%,
+        yellow 80% 90%,
+        skyblue 90% 
+    );
+    box-sizing: border-box;
+}
+
+.color2{
+    
+    margin-top: 200px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to top,
+        red 10%,
+        blue 10% 20%,
+        green 20% 30%,
+        hotpink 30% 40%,
+        purple 40% 50%,
+        crimson 50% 60%,
+        lightgreen 60% 70%,
+        royalblue 70% 80%,
+        yellow 80% 90%,
+        skyblue 90% 
+    );
+    background-size: cover;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    animation: change 3s infinite linear;
+}
+
+
+
+@keyframes change{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.before{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.before::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+}
+
+.gradient h1{
+    margin-top: 200px;
+    text-align: left;
+    background: linear-gradient(red, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.three-d{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    margin: 100px;
+}
+.trans{
+    width: 100%;
+    height: 100%;
+    perspective: 500px;
+}
+.main-box{
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 150px;
+    background-color: rgb(255, 0, 43);
+    transform: translatex(-150px) rotateY(92deg);
+    position: absolute;
+}
+.main-box1{
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 150px;
+    background-color: rgb(255, 0, 43);
+    transform: translatex(150px) rotateY(92deg);
+    position: relative;
+}
